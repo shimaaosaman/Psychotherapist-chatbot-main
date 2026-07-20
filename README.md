@@ -1,4 +1,4 @@
-## 🌸 InnerBloom — AI Mental Health Support Chatbot
+## InnerBloom — AI Mental Health Support Chatbot
 
 **InnerBloom** is an end-to-end AI-powered mental health support chatbot built using **Mistral-7B-Instruct** and fine-tuned with **LoRA (Low-Rank Adaptation)**.
 The project combines **instruction fine-tuning**, **retrieval-augmented generation (RAG)**, and a **Gradio-based conversational UI** to provide empathetic, context-aware responses in a safe and user-friendly environment.
@@ -27,7 +27,7 @@ The project combines **instruction fine-tuning**, **retrieval-augmented generati
 
 ---
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
 * **Base Model:** `mistralai/Mistral-7B-Instruct-v0.2`
 * **Fine-Tuning:** LoRA adapters (PEFT)
@@ -39,7 +39,7 @@ The project combines **instruction fine-tuning**, **retrieval-augmented generati
 
 ---
 
-## 📂 Project Pipeline
+## Project Pipeline
 
 1. Convert raw dataset to instruction-tuning JSONL format
 2. Store dataset knowledge in Chroma vector database
@@ -50,21 +50,21 @@ The project combines **instruction fine-tuning**, **retrieval-augmented generati
 
 ---
 
-## 🎯 Use Case
+## Use Case
 
 InnerBloom is designed to demonstrate how **large language models can be adapted for empathetic, domain-specific conversations** while remaining efficient, scalable, and deployable on limited hardware.
 It is suitable for educational, research, and proof-of-concept applications in **AI-assisted mental health support**.
 
 ---
 
-## ⚠️ Disclaimer
+## Diclaimer
 
 This project is intended for **research and educational purposes only** and does **not replace professional mental health care**.
 
 
 
 
-🖥 User Interface
+ User Interface
 
 The chatbot features a clean and calming web interface built with Gradio, designed to provide a safe and comfortable user experience.
 It includes a real-time chat window, message input field, send and clear chat buttons, and a visually soothing theme that aligns with the project’s mental health focus.
@@ -72,7 +72,7 @@ It includes a real-time chat window, message input field, send and clear chat bu
 
 ---
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 This project can be run **locally** or on **Kaggle**.
 Below are the recommended steps to get the chatbot up and running.
@@ -193,19 +193,6 @@ uvicorn api:app --host 0.0.0.0 --port 8000
 Then send POST requests to the inference endpoint.
 
 ---
-
-## 🛠️ Troubleshooting
-
-* **Out of memory error:**
-
-  * Ensure `load_in_4bit=True`
-  * Reduce `max_new_tokens`
-  * Enable offloading
-
-* **Model not loading:**
-
-  * Verify LoRA adapter path
-  * Check that Mistral model access is enabled
 
 
 
